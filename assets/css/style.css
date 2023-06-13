@@ -1,0 +1,255 @@
+body {
+  background-color: #ffebf5;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+/* 헤더 */
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: -20px;
+}
+
+/* h1 */
+h1 {
+  display: flex;
+  align-items: center;
+}
+
+h1 > img {
+  height: 90px;
+  margin-right: 10px;
+}
+
+/* 채팅 */
+.chating {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  top: -10px;
+  border: 5px solid #e9c9d2;
+  width: 60vh;
+  height: 60vh;
+  box-sizing: border-box;
+  background-color: #e9c9d2;
+  overflow-y: auto;
+}
+
+/* question */
+.question {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  margin-left: auto;
+}
+
+.question .user-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.question .chat_content {
+  background-color: #fff3f8;
+  padding: 10px;
+  border-radius: 15px;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  color: #333;
+  word-wrap: break-word;
+  text-align: left;
+  max-width: 80%;
+}
+
+.question-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  flex-direction: row-reverse;
+  margin-top: -5px;
+}
+
+.user-icon {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+}
+
+/* answer */
+.answer {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.answer .chatbot-image {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.answer .chat_content {
+  background-color: #ff9fcb;
+  padding: 10px;
+  border-radius: 15px;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  color: #333;
+  word-wrap: break-word;
+  text-align: left;
+  max-width: 80%;
+}
+
+.answer-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  margin-top: -5px;
+}
+
+.nurse-image {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  position: sticky;
+  top: 0;
+}
+
+/* Chat-container */
+.chat-container {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  width: 60vh;
+}
+
+/* 채팅 헤드라인 */
+.chat-header {
+  background-color: #e9c9d2;
+  padding: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  font-size: 20px;
+  color: #19191ad0;
+}
+
+.chat-list {
+  list-style-type: none;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.chat-list li {
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+}
+
+.chat-list li.question {
+  justify-content: flex-start;
+}
+
+.chat-list li.answer {
+  justify-content: flex-end;
+}
+
+/* loading */
+.loading-indicator {
+  height: 40px;
+  width: 40px;
+  border: 6px solid #fff;
+  border-right-color: #c30;
+  border-top-color: #c30;
+  border-radius: 100%;
+  animation: spin 800ms infinite linear;
+  position: fixed;
+  top: 50%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+  z-index: 995;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.blur {
+  filter: blur(5px);
+}
+
+/* input */
+.user-message {
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  height: 10vh;
+  width: 60vh;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  box-sizing: border-box;
+  margin-top: -10px;
+}
+
+.user-message textarea {
+  height: 7vh;
+  width: 49vh;
+  padding: 5px;
+  border: none;
+  resize: none;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  background-color: #f2f2f2;
+}
+
+.submit-button {
+  width: 50px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.submit-button img {
+  width: 100%;
+  height: auto;
+}
+
+/* darkmode */
+.dark-mode #dark {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+}
+
+.dark-mode #dark img {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+}

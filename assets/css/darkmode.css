@@ -1,0 +1,52 @@
+body.dark-mode #dark,
+body.dark-mode #dark img {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+}
+
+body.dark-mode {
+  background-color: #333;
+  color: #f0f0f0;
+}
+
+.dark-mode .chat-container {
+  background-color: #222;
+}
+
+.dark-mode .chat-header {
+  color: #f0f0f0;
+  background-color: #0000008c;
+}
+
+.dark-mode .chating {
+  background-color: #222;
+  border: 5px solid #0000008c;
+}
+
+.dark-mode .chat-list li.question .chat_content {
+  background-color: #444;
+  color: #f0f0f0;
+}
+
+.dark-mode .chat-list li.answer .chat_content {
+  background-color: #555;
+  color: #f0f0f0;
+}
+
+.dark-mode .user-message textarea {
+  background-color: #444;
+  color: #f0f0f0;
+}
+.dark-mode .user-message {
+  background-color: #0000008c;
+}
+
+.dark-mode .loading-indicator {
+  border-color: #f0f0f0;
+  border-right-color: rgb(52, 43, 40);
+  border-top-color: rgb(49, 34, 30);
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>질병 자가진단 & 약물 정보 안내</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/darkmode.css" />
+    <link rel="web icon" href="./assets/img/nurse.png" />
+  </head>
+
+  <body>
+    <!-- 로고 -->
+    <div class="header">
+      <h1><img src="./assets/img/logo.png" alt="로고" /></h1>
+    </div>
+    <!-- 채팅 -->
+    <div class="chat-container" id="chat-container">
+      <div class="chat-header">의학비서 챗봇</div>
+    </div>
+    <div class="chating">
+      <ul id="chat-list" class="chat-list"></ul>
+    </div>
+
+    <!-- 사용자 -->
+    <form id="chat-form" action="post" class="chat-form">
+      <div class="user-message">
+        <textarea id="chat-input" placeholder="메시지를 입력하세요"></textarea>
+        <button type="submit" class="submit-button">
+          <img src="./assets/img/submit.png" alt="제출" />
+        </button>
+        <!-- 다크 모드 -->
+        <div class="dark-mode">
+          <button class="darkmode" id="dark">
+            <img id="dark-image" src="./assets/img/moon.png" alt="dark-icon" />
+          </button>
+        </div>
+      </div>
+    </form>
+
+    <!-- 로딩 표시 -->
+    <div class="loading-indicator" id="loading-indicator">
+      <div class="loading-text"></div>
+    </div>
+
+    <!-- js 연결 -->
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/darkmode.js"></script>
+  </body>
+</html>
